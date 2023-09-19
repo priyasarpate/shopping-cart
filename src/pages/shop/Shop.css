@@ -27,7 +27,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   place-items: center;
-
 }
 
 .product {
@@ -43,7 +42,7 @@
 .cards {
   border: 1px solid lightblue;
   border-radius: 20px;
-  padding:  20px;
+  padding: 20px;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
@@ -59,4 +58,11 @@
   transition: 0.3s ease-in;
   cursor: pointer;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.add-btn {
+  background-color: brown;
+  color: white;
+  padding: 3px 15px 3px 15px;
+  border: brown;
 }

@@ -11,6 +11,8 @@ function Product(props) {
           <b>{productName}</b>
         </p>
         <p>{price}</p>
+        <button className="add-btn">Add to Cart</button>
+
       </div>
       </div>
      
