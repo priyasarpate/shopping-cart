@@ -4,17 +4,21 @@ import Navbar from "./components/Navbar";
 import "./App.css";
 import Shop from "./pages/shop/Shop";
 import Cart from "./pages/cart/Cart";
+import { ShoContextProvider } from "./context/ShoContext";
 
 function App() {
   return (
     <div>
-      <Router>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Shop />} />
-          <Route path="/cart" element={<Cart />} />
-        </Routes>
-      </Router>
+      {/* // 12 */}
+      <ShoContextProvider>  
+        <Router>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Shop />} />
+            <Route path="/cart" element={<Cart />} />
+          </Routes>
+        </Router>
+      </ShoContextProvider>
     </div>
   );
 }
